@@ -19,14 +19,6 @@ myApp.controller("chatController", ["$scope", "$firebaseArray",
      var newmessage = {from:user.username || "anonymous",body:user.chat};
      console.log(newmessage);
      $scope.chats.$add(newmessage);
-     var replies = [
-       "hey! I'm glad you're here.",
-       "haha you're fun to listen to...",
-      "haha, it was funny when you said \"" + user.chat + ".\" LOL NOT",
-       ":)",
-       "Want to hear a joke?\nYo mamma so fat, she has her own moons!",
-       "How long will you stay here?"
-     ];
       var msg = respondTo(user.chat);
       console.log("bot: " + msg);
       var botmessage = {from:"bot" || "anonymous",body:msg};
@@ -89,5 +81,5 @@ function respondTo(input) {
     return;
   }
 
-  return input + " what?";
+  return input + "... interesting comment!";
 }
