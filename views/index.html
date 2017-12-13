@@ -26,17 +26,12 @@
         };
         firebase.initializeApp(config);
     </script>
-
     <!-- Scroll the chat -->
-    <!-- <script>
-        window.scrollTo(0,document.querySelector('#scrollingContainer').scrollHeight);
-    </script> -->
+    <script src="https://cdn.rawgit.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
 </head>
         
 <body>  
     <div class="my-body" ng-controller="myController">
-        
-        <h2 class="mine" id="welcomeText">Welcome to Chatbot, <%= username %></h2>
             
         <div ng-controller="chatController" id="live-chat">
             
@@ -50,9 +45,9 @@
             
             <div class="chat">
                 
-                <div class="chat-history" id="scrollingContainer">
+                <div scroll-glue="!glued" class="chat-history">
                     
-                    <div class="chat-message clearfix" ng-repeat='line in chats' my-repeat-directive>
+                    <div class="chat-message clearfix" ng-repeat='line in chats'>
                         
                         <img src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg" alt="" width="32" height="32">
                         
@@ -74,7 +69,6 @@
                         <input type="text" ng-model="user.chat" placeholder="Type your message…" autofocus style="width: 100%">
                         <input type="submit" ng-click="update(user)" style="display: none;">
                     </fieldset>
-                    <!-- <button type="submit" onclick="ScrollToBottom()">Scroll</button> -->
                 </form>
                 
             </div> <!-- end chat -->
@@ -85,9 +79,6 @@
             <form method="GET" action="/logout">
                 <button type="submit" id="logoutLink">Logout</button>
             </form><br>
-            <form method="GET" action="/user">
-                <button type="submit" id="editLink">Edit User</button>
-            </form>
         </div>
             
 

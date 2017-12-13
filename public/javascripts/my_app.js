@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp",["firebase"]);
+var myApp = angular.module("myApp",["firebase", "luegg.directives"],);
 myApp.controller('myController', ['$scope', '$http',
                             function($scope, $http) {
   $http.get('/user/profile')
@@ -19,7 +19,7 @@ myApp.controller("chatController", ["$scope", "$firebaseArray",
      var newmessage = {from:user.username || "anonymous",body:user.chat};
      console.log(newmessage);
      $scope.chats.$add(newmessage);
-      var msg = respondTo(user.chat);
+      var msg = respondTo(user.chat, user.username);
       console.log("bot: " + msg);
       var botmessage = {from:"bot" || "anonymous",body:msg};
       $scope.chats.$add(botmessage);
@@ -28,23 +28,25 @@ myApp.controller("chatController", ["$scope", "$firebaseArray",
  }
 ]);
 
-myApp.directive('myRepeatDirective', function() {
-  return function(scope, element, attrs) {
-    if (scope.$last){
-      console.log(document.querySelector("#scrollingContainer").scrollHeight);
-      // document.querySelector("#scrollingContainer").scrollTop;
-      // window.scrollTo(0,document.querySelector("#scrollingContainer").scrollHeight - 1);
-    }
-  };
-})
-
 function match(regex, input) {  
   return new RegExp(regex).test(input);
 }
 
-function respondTo(input) {
+function respondTo(input, user) {
 
+  
   input = input.toLowerCase();
+  
+  randomAnswer = [
+    input + "... interesting comment.",
+    "I'm not sure if you know what you mean by that!",
+    input + "! Are you kidding me bro!?",
+    "pffft whatever, " + user,
+    "nahhh",
+    "what do you even mean by that",
+    "don't you wish your girlfriend was hot LIKE ME",
+    "you really think you're all that, don't you " + user
+  ];
 
   if(match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)', input))
     return "um... hi?";
@@ -70,7 +72,19 @@ function respondTo(input) {
   }
 
   if(match('(cya|bye|see ya|ttyl|talk to you later)', input)) {
-    return ["alright, see you around", "good teamwork!"];
+    return "alright, see you around";
+  }
+
+  if(match('(stop)', input)) {
+    return "NEVER!";
+  }
+
+  if(match('(what|why|where|when|how)', input)) {
+    return "Don't even ask, " + user;
+  }
+
+  if(match('(ree(e*))', input)) {
+    return "shutup you autist fag!";
   }
 
   if(match('(dumb|stupid|is that all)', input)) {
@@ -81,5 +95,5 @@ function respondTo(input) {
     return;
   }
 
-  return input + "... interesting comment!";
+  return randomAnswer[Math.floor(Math.random() * 7)];
 }
