@@ -1,0 +1,413 @@
+before / Route
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T03:51:28.583Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m14.808 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.608 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.643 ms - -[0m
+[0mGET /user/profile [36m304 [0m13.566 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.682 ms - 308[0m
+/logout Route
+[0mGET /logout [36m302 [0m5.070 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m2.829 ms - 880[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.558 ms - -[0m
+/signup Route
+[0mGET /signup [32m200 [0m9.446 ms - 920[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.060 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m1.344 ms - 958[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.269 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m1.056 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.955 ms - 967[0m
+[0mGET /stylesheets/style.css [36m304 [0m13.168 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.952 ms - 967[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.405 ms - 111[0m
+[0mGET /favicon.ico [33m404 [0m1.100 ms - 308[0m
+/login Route
+[0mGET /login [32m200 [0m1.130 ms - 1081[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.764 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m1.336 ms - 1179[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.062 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m1.227 ms - 1130[0m
+[0mGET /stylesheets/style.css [36m304 [0m7.790 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m3.100 ms - 1165[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.490 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m0.905 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.608 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.956 ms - 1164[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.110 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.864 ms - 1164[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.759 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m2.453 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.425 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m1.126 ms - 1164[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.094 ms - 111[0m
+[0mGET /favicon.ico [33m404 [0m0.627 ms - 308[0m
+[0mGET /login [0m- [0m- ms - -[0m
+/login Route
+/login Route
+[0mGET /login [32m200 [0m0.927 ms - 1151[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.927 ms - -[0m
+/login Route
+[0mGET /login [36m304 [0m0.966 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.708 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m1.559 ms - 1081[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.990 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.942 ms - 1080[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.706 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.905 ms - 1129[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.764 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.998 ms - 1158[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.724 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.917 ms - 1151[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.453 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m4.837 ms - 1080[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.995 ms - -[0m
+login
+{ _id: 5a2826e5a6b0b5142057d1f7,
+  email: 'myemail@email.com',
+  hashed_password: 'XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=',
+  username: 'tyler',
+  __v: 0,
+  color: 'Green' }
+[0mPOST /login [36m302 [0m21.004 ms - 46[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:50:35.610Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m4.177 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.768 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.623 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.919 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.683 ms - 308[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:50:36.521Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m2.104 ms - 944[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.818 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.639 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.383 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:51:18.179Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.465 ms - 992[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.453 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.600 ms - -[0m
+[0mGET /user/profile [36m304 [0m2.781 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:51:32.772Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.881 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.293 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.608 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.589 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:51:33.338Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.215 ms - 1037[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.735 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.583 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.757 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:51:57.236Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.824 ms - 1024[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.236 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.311 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.323 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:05.272Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.416 ms - 1036[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:13.805Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.179 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.588 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.531 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.002 ms - -[0m
+[0mGET /javascripts/my_app.js [32m200 [0m1.537 ms - 376[0m
+[0mGET /user/profile [36m304 [0m1.511 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:15.011Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.488 ms - 1037[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.694 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.577 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.680 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:21.929Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.338 ms - 1037[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.726 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.567 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:28.929Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.222 ms - -[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.748 ms - 111[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.686 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.565 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:29.614Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.839 ms - 1037[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.955 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.580 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.181 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:52:45.427Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.908 ms - 1057[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.711 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.563 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.107 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:53:00.716Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.193 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.755 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.611 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.732 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:53:01.787Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.199 ms - 1058[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.507 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.329 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.991 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:53:06.384Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m1.114 ms - 1080[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.290 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.905 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.100 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:53:18.277Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [32m200 [0m2.317 ms - 1106[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.722 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.618 ms - -[0m
+[0mGET /user/profile [36m304 [0m2.362 ms - -[0m
+/user Route
+[0mGET /user [32m200 [0m1.058 ms - 1370[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.699 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m0.705 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.212 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T04:53:37.846Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5a2826e5a6b0b5142057d1f7',
+  username: 'tyler',
+  msg: 'Authenticated as tyler',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.314 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.825 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.126 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.209 ms - -[0m
+/logout Route
+[0mGET /logout [36m302 [0m1.634 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m1.040 ms - 1080[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.653 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2018-01-06T06:28:44.511Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true } }
+/ Route else user
+[0mGET / [36m302 [0m3.401 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m0.969 ms - 1094[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.694 ms - -[0m
+/login Route
+[0mGET /login [32m200 [0m0.745 ms - 1094[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.725 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.222 ms - 308[0m

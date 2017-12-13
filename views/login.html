@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+        
+<body>  
+    <div class="form-container">
+        <!-- <p class="form-header">Login</p> -->
+        <div style="width: 400px; margin: 200px auto 0 auto;">
+            <form method="POST" action="/login">
+                
+                <label>Username:</label>
+                <input type="text" id="username" name="username"><br>
+                
+                <label>Password:</label>
+                <input type="password" id="password" name="password"><br>
+                
+                <input type="submit" id="login" value="Login">
+
+            </form>
+        </div>
+    </div>
+
+    <div style="width: 500px; margin: 20px auto 0 auto;">
+        <a id="signUpLink" href="/signup">Sign Up</a>
+    </div>
+    
+    <hr>
+    
+    <span id="loginMsg">
+        <%= msg %>
+    </span>
+</body>
+        
+</html>
