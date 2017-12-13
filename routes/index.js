@@ -3,7 +3,7 @@ var router = express.Router();
 var expressSession = require('express-session');
 
 var users = require('../controllers/users_controller');
-console.log("before / Route");
+// console.log("before / Route");
 router.get('/', function(req, res){
     console.log("/ Route");
 //    console.log(req);

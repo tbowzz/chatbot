@@ -2,38 +2,87 @@
 <html ng-app="myApp"> 
     
 <head>
-    <title>User Login and Sessions</title>
+    <title>Chatbot</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <!-- My JavaScript -->
+    <script src="javascripts/my_app.js"></script>
+    <!-- Firebase Integration -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC0Qy66V8v-IZmQEAGeugwAgqP3nUskI48",
+            authDomain: "chat-3dc14.firebaseapp.com",
+            databaseURL: "https://chat-3dc14.firebaseio.com",
+            projectId: "chat-3dc14",
+            storageBucket: "chat-3dc14.appspot.com",
+            messagingSenderId: "650602377506"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
         
 <body>  
-    <div ng-controller="myController" style="width: 400px; margin: 20px auto 0 auto;">
+    <div ng-controller="myController">
         
-        <h2 id="welcomeText">Welcome, <%= username %> 🤣</h2>
+        <h2 class="mine" id="welcomeText">Welcome to Chatbot, <%= username %></h2>
+        <div>
+            <a id="logoutLink" href="/logout">logout</a>
+            <a id="editLink" href="/user">Edit User</a>
+        </div>
 
-        <a id="logoutLink" href="/logout">logout</a>
+        <div ng-controller="chatController" id="live-chat">
+                
+                <header class="clearfix">
         
-        <a id="editLink" href="/user">Edit User</a>
+                    <h4><%= username %> (you)</h4>
+        
+                    <span class="chat-message-counter">3</span>
+        
+                </header>
+        
+                <div class="chat">
+                    
+                    <div class="chat-history">
+        
+                        <div class="chat-message clearfix" ng-repeat='line in chats'>
+                            
+                            <img src="http://s3.amazonaws.com/nvest/Blank_Club_Website_Avatar_Gray.jpg" alt="" width="32" height="32">
+        
+                            <div class="chat-message-content clearfix">
+        
+                                <h4>{{line.from}}</h4>
+        
+                                <p>{{line.body}}</p>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div> <!-- end chat-history -->
+        
+                    <form>
+                        <fieldset>
+                            <input type="text" ng-model="user.username" placeholder="{{user.username}}" style="display: none;"/>
+                            <input type="text" ng-model="user.chat" placeholder="Type your message…" autofocus style="width: 100%">
+                            <input type="submit" ng-click="update(user)" style="display: none;">
+                        </fieldset>
+        
+                    </form>
+        
+                </div> <!-- end chat -->
+        
+            </div> <!-- end live-chat -->
 
     </div>
-    <hr>
-    
-    <!-- Authentication Message -->
-    <div style="width: 400px; margin: 20px auto 0 auto;">
-        <span id="indexMsg"><%= msg %></span>
-        
-        <!-- <hr style="width: 250px"> -->
-        <br>
-        <br>
-        <br>
-        
-        <!-- Favorite Color Message -->
-        <span id="colorText">Favorite Color: <%= color %></span>
-    </div>
-    
-    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
-    <script src="/javascripts/my_app.js"></script>
+    <!-- <hr> -->
+
 </body>
       
 </html>
