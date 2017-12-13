@@ -40,6 +40,44 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
+
+.my-form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  margin-left: -180px;
+  /* right: 41%; */
+  width: 300px;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+button:hover, button:active, button:focus {
+  background: #43A047;
+}
+
 .form button:hover,.form button:active,.form button:focus {
   background: #43A047;
 }
@@ -88,6 +126,17 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
+
+.my-body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;    
+}
 body {
   background: #76b852; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
@@ -110,17 +159,26 @@ body {
 /* CHAT */
 
 #live-chat {
-	position: fixed;
+  position: fixed;
   width: 80%;
-  height: 50%;
+  height: 604px;
   top: 15%;
+  bottom: 15%;
   left: 10%;
 	right: 10%;
-	font-size: 12px;
+  font-size: 12px;
+  z-index: 1;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.chat-history {
+  height: 456px;
+  padding: 8px 24px;
+  overflow-y: scroll;
 }
 
 #live-chat header {
-	background: #293239;
+  background: #293239;
 	border-radius: 5px 5px 0 0;
 	color: #fff;
 	cursor: pointer;
@@ -174,29 +232,10 @@ body {
 	width: 28px;
 }
 
-.chat-close {
-	background: #1b2126;
-	border-radius: 50%;
-	color: #fff;
-	display: block;
-	float: right;
-	font-size: 10px;
-	height: 16px;
-	line-height: 16px;
-	margin: 2px 0 0 0;
-	text-align: center;
-	width: 16px;
-}
-
 .chat {
 	background: #fff;
 }
 
-.chat-history {
-	height: 252px;
-	padding: 8px 24px;
-	overflow-y: scroll;
-}
 
 .chat-message {
 	margin: 16px 0;
