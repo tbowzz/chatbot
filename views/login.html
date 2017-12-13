@@ -9,31 +9,16 @@
         
 <body>  
     <div class="form-container">
-        <!-- <p class="form-header">Login</p> -->
-        <div style="width: 400px; margin: 200px auto 0 auto;">
-            <form method="POST" action="/login">
-                
-                <label>Username:</label>
-                <input type="text" id="username" name="username"><br>
-                
-                <label>Password:</label>
-                <input type="password" id="password" name="password"><br>
-                
-                <input type="submit" id="login" value="Login">
-
+        <div class="form">
+            <form method="POST" action="/login" class="login-form">
+                <input type="text" id="username" name="username" placeholder="name"><br>
+                <input type="password" id="password" name="password" placeholder="password"><br>
+                <button type="submit" id="login" value="Login">Login</button>
+                <p class="message">Not registered? <a href="/signup">Create an account</a></p><br>
             </form>
+            <span id="loginMsg"><%= msg %></span>
         </div>
     </div>
-
-    <div style="width: 500px; margin: 20px auto 0 auto;">
-        <a id="signUpLink" href="/signup">Sign Up</a>
-    </div>
-    
-    <hr>
-    
-    <span id="loginMsg">
-        <%= msg %>
-    </span>
 </body>
         
 </html>
